@@ -10,49 +10,51 @@
 <body>
     <h1>APP DAY FOUR</h1>
 
+    <form onsubmit="return handleSubmit(event), false;">
+        <p>
 
-    <p>
+            <label>
+                Name:
+                    <input name="name" type="text" value="Aaron">
+            </label>
+            
+            <button>Click Me!</button>
 
-        <label>
-            Name:
-                <input name="name" type="text">
-        </label>
+        </p>
+
+        <p>
+
+            <label>
+            Comments:
+            <textarea>I am a comment</textarea>
+            </label>
+
+        </p>
+        <p>
+            <label>
+            <input checked value="olives" type="checkbox">Olives
+            </label>
+
+            <label>
+            <input type="checkbox">Pepperoni
+            </label>
+
+            <label>
+            <input type="checkbox">Pineapple
+            </label>
+
+        </p>
+        <p>
+
+            <label>A<input checked name="grade" type="radio"></label>
+            <label>B<input name="grade" type="radio"></label>
+            <label>C<input name="grade" type="radio"></label>
+
+        </p>
+
+        <button>Submit</button>
+    </form>
         
-        <button>Click Me!</button>
-
-    </p>
-
-    <p>
-
-        <label>
-        Comments:
-        <textarea></textarea>
-        </label>
-
-    </p>
-    <p>
-        <label>
-        <input type="checkbox">Olives
-        </label>
-
-        <label>
-        <input type="checkbox">Pepperoni
-        </label>
-
-        <label>
-        <input type="checkbox">Pineapple
-        </label>
-
-    </p>
-    <p>
-
-        <label>A<input name="grade" type="radio"></label>
-        <label>B<input name="grade" type="radio"></label>
-        <label>C<input name="grade" type="radio"></label>
-
-    </p>
-
-    <button onclick="sayHello()">Click Me!</button>
     <script src="index.js"></script>
 </body>
 </html>
